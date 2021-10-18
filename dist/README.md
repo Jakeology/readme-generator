@@ -1,9 +1,8 @@
-function readmeTemplate(projectData) {
-  return `
-# ${projectData.title}
+
+# jake
     
 ## Description
-${projectData.description}
+jake
 
 ## Table of Contents 
 
@@ -18,8 +17,4 @@ ${projectData.description}
 * [Tests](#tests)
 
 * [Questions](#questions)
-
-`;
-}
-
-module.exports = { readmeTemplate };
+    

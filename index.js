@@ -33,5 +33,5 @@ promptQuestions()
     return generateReadme(file);
   })
   .then(writeFileResponse => {
-    console.log(writeFileResponse);
+    console.log(writeFileResponse.message);
   });
