@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "An application built with node.js to generate a professional README.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jakeology/readme-generator.git"
+  },
+  "author": "Jakeology",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jakeology/readme-generator/issues"
+  },
+  "homepage": "https://github.com/Jakeology/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
