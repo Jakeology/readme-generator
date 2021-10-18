@@ -19,6 +19,10 @@ ${projectData.description}
 
 * [Questions](#questions)
 
+## Installation
+${projectData.installationDesc}
+
+## Usage
 `;
 }
 

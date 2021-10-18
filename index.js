@@ -22,6 +22,11 @@ const promptQuestions = () => {
       name: "description",
       message: "Write a breif description about your project.",
     },
+    {
+      type: "editor",
+      name: "installationDesc",
+      message: "Write a brief description and commands needed for the installation process. (Make sure to save the file!)",
+    },
   ]);
 };
 
