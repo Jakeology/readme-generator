@@ -20,19 +20,31 @@ const promptQuestionsP1 = () => {
     {
       type: "input",
       name: "description",
-      message: "Write a breif description about your project.",
+      message: "Write a breif description about your project: ",
     },
     {
       type: "input",
       name: "installationDesc",
-      message: "Write a brief description for the installation process:",
+      message: "Write a brief description for the installation process: ",
+    },
+    {
+      type: "input",
+      name: "usage",
+      message: "What is the usage of this project for?",
+    },
+    {
+      type: "list",
+      name: "license",
+      message: "Please choose a license for your project: ",
+      default: "MIT",
+      choices: ["Apache", "Academic", "GNU", "ISC", "MIT", "Mozilla", "Open"],
     },
   ]);
 };
 
 promptQuestionsP1()
   .then((readmeData) => {
-    console.log(readmeData)
+    console.log(readmeData);
     return readmeTemplate(readmeData);
   })
   .then((file) => {
