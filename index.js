@@ -2,7 +2,7 @@ const { generateReadme } = require("./utils/generateReadme.js");
 const { readmeTemplate } = require("./src/readmeTemplate.js");
 const inquirer = require("inquirer");
 
-const promptQuestions = () => {
+const promptQuestionsP1 = () => {
   return inquirer.prompt([
     {
       type: "input",
@@ -23,20 +23,21 @@ const promptQuestions = () => {
       message: "Write a breif description about your project.",
     },
     {
-      type: "editor",
+      type: "input",
       name: "installationDesc",
-      message: "Write a brief description and commands needed for the installation process. (Make sure to save the file!)",
+      message: "Write a brief description for the installation process:",
     },
   ]);
 };
 
-promptQuestions()
+promptQuestionsP1()
   .then((readmeData) => {
+    console.log(readmeData)
     return readmeTemplate(readmeData);
   })
   .then((file) => {
     return generateReadme(file);
   })
-  .then(writeFileResponse => {
+  .then((writeFileResponse) => {
     console.log(writeFileResponse.message);
   });
