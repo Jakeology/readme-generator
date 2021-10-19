@@ -17,4 +17,10 @@ const generateReadme = (fileContent) => {
   });
 };
 
-module.exports = {generateReadme};
+function generateContributersArray(usersString) {
+  let user = usersString.split(", ").join(",");
+  let namesArr = user.split(",");
+  return namesArr;
+}
+
+module.exports = {generateReadme, generateContributersArray};

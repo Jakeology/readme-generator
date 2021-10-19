@@ -1,4 +1,4 @@
-const { generateReadme } = require("./utils/generateReadme.js");
+const { generateReadme, generateContributersArray } = require("./utils/generateReadme.js");
 const { readmeTemplate } = require("./src/readmeTemplate.js");
 const inquirer = require("inquirer");
 
@@ -30,20 +30,25 @@ const promptQuestionsP1 = () => {
     {
       type: "input",
       name: "usage",
-      message: "What is the usage of this project for?",
+      message: "What is the usage of this project?",
     },
     {
       type: "list",
       name: "license",
       message: "Please choose a license for your project: ",
-      default: "MIT",
       choices: ["Apache", "Academic", "GNU", "ISC", "MIT", "Mozilla", "Open"],
+    },
+    {
+      type: "input",
+      name: "contributing",
+      message: "Who are the contributors of this project?(Use commas to separate the names)",
     },
   ]);
 };
 
 promptQuestionsP1()
   .then((readmeData) => {
+    readmeData.contributing = generateContributersArray(readmeData.contributing);
     console.log(readmeData);
     return readmeTemplate(readmeData);
   })

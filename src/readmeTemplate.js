@@ -24,14 +24,25 @@ ${projectData.installationDesc}
 
 ${projectData.usage}
 
-## Usage
-
-${projectData.usage}
-
 ## License
 
 This project is licensed under the ${projectData.license} license.
+
+## Contributing
+${getContributers(projectData.contributing)}
 `;
+}
+
+function getContributers(userArray) {
+  return `${userArray.join("\n")}`;
+}
+
+function getSym(num) {
+  let sym = "";
+  for(let i = 0; i < num; i++) {
+    sym += "`";
+  }
+  return sym;
 }
 
 module.exports = { readmeTemplate };
