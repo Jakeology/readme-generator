@@ -66,6 +66,16 @@ const promptQuestionsP1 = () => {
       name: "questions",
       message: "Write a brief description if users are having issues/questions",
     },
+    {
+      type: "input",
+      name: "github",
+      message: "Please enter your Github username",
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "Please enter your Email",
+    },
   ]);
 };
 

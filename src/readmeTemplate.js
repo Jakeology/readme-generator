@@ -4,11 +4,9 @@ function readmeTemplate(projectData) {
 ![GitHub license](https://img.shields.io/badge/license-${projectData.license}-blue.svg)
     
 ## Description
-
 ${projectData.description}
 
 ## Table of Contents 
-
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
@@ -17,15 +15,12 @@ ${projectData.description}
 * [Questions](#questions)
 
 ## Installation
-
 ${projectData.installationDesc}
 
 ## Usage
-
 ${projectData.usage}
 
 ## License
-
 This project is licensed under the ${projectData.license} license.
 
 ## Contributing
@@ -36,6 +31,9 @@ ${getTests(projectData)}
 
 ## Questions
 ${projectData.questions}
+
+Github: [${projectData.github}](https://github.com/${projectData.github})
+Email: ${projectData.email}
 `;
 }
 
