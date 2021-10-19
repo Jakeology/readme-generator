@@ -43,6 +43,29 @@ const promptQuestionsP1 = () => {
       name: "contributing",
       message: "Who are the contributors of this project?(Use commas to separate the names)",
     },
+    {
+      type: "confirm",
+      name: "testConfirm",
+      message: "Are there any test included in your project?",
+      default: false,
+    },
+    {
+      type: "input",
+      name: "test",
+      message: "Write a brief description for the test process:",
+      when: ({ testConfirm }) => {
+        if (testConfirm) {
+          return true;
+        } else {
+          return false;
+        }
+      },
+    },
+    {
+      type: "input",
+      name: "questions",
+      message: "Write a brief description if users are having issues/questions",
+    },
   ]);
 };
 

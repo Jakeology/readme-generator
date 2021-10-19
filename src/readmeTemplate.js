@@ -30,6 +30,12 @@ This project is licensed under the ${projectData.license} license.
 
 ## Contributing
 ${getContributers(projectData.contributing)}
+
+## Tests
+${getTests(projectData)}
+
+## Questions
+${projectData.questions}
 `;
 }
 
@@ -37,12 +43,20 @@ function getContributers(userArray) {
   return `${userArray.join("\n")}`;
 }
 
-function getSym(num) {
-  let sym = "";
-  for(let i = 0; i < num; i++) {
-    sym += "`";
+function getTests(data) {
+  if(data.testConfirm) {
+    return data.test;
+  } else {
+    return `This project does not have any tests.`;
   }
-  return sym;
 }
+
+// function getSym(num) {
+//   let sym = "";
+//   for(let i = 0; i < num; i++) {
+//     sym += "`";
+//   }
+//   return sym;
+// }
 
 module.exports = { readmeTemplate };
