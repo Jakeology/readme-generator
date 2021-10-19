@@ -49,12 +49,4 @@ function getTests(data) {
   }
 }
 
-// function getSym(num) {
-//   let sym = "";
-//   for(let i = 0; i < num; i++) {
-//     sym += "`";
-//   }
-//   return sym;
-// }
-
 module.exports = { readmeTemplate };
