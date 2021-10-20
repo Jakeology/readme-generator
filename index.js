@@ -1,4 +1,4 @@
-const { generateReadme, generateContributersArray } = require("./utils/generateReadme.js");
+const { generateReadme, generateArray } = require("./utils/generateReadme.js");
 const { readmeTemplate } = require("./src/readmeTemplate.js");
 const inquirer = require("inquirer");
 
@@ -137,8 +137,7 @@ const promptQuestionsP1 = () => {
 
 promptQuestionsP1()
   .then((readmeData) => {
-    readmeData.contributing = generateContributersArray(readmeData.contributing);
-    console.log(readmeData);
+    readmeData.contributing = generateArray(readmeData.contributing);
     return readmeTemplate(readmeData);
   })
   .then((file) => {

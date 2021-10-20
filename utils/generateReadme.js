@@ -26,10 +26,10 @@ const generateReadme = (fileContent) => {
   });
 };
 
-function generateContributersArray(usersString) {
-  let user = usersString.split(", ").join(",");
+function generateArray(string) {
+  let user = string.split(", ").join(",");
   let namesArr = user.split(",");
   return namesArr;
 }
 
-module.exports = { generateReadme, generateContributersArray };
+module.exports = { generateReadme, generateArray };
