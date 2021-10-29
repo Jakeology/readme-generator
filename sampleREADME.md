@@ -1,4 +1,4 @@
-# readme-generator(SAMPLE)
+# readme-generator
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
     
 ## Description
@@ -24,13 +24,14 @@ This project is licensed under the MIT license.
 ## Contributing
 Jake
 Mike
-Mikes Brother
+Matt
 
 ## Tests
-To run test, please use `npm test`
+To run test, Please use `npm test`
 
 ## Questions
-If you are having issues or have questions about our readme generator, Feel free to contact me through Github or Email.
+If you are having issues or have questions about our readme generator, Feel free to contact me through Github or Email
 
 Github: [Jakeology](https://github.com/Jakeology)
-Email: support@jakeology.io
+Email: jakeology@email.com
+
