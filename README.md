@@ -13,7 +13,8 @@ Make sure you have inquirer installed. To install inquirer please run the follow
 `npm install inquirer`
 
 ## Video
-https://user-images.githubusercontent.com/48842814/138017532-ab7a40db-e841-4f46-bda1-d69516365671.mp4
+https://user-images.githubusercontent.com/48842814/139492237-3e5eba84-84a6-43a0-91f2-db386d153d59.mp4
+
 
 ## Sample README
 https://github.com/Jakeology/readme-generator/blob/main/sampleREADME.md
